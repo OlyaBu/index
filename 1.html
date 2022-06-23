@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="assets-copy/BFKH_brain.png" type="image/png">
+
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "Aeroport_regular";
+            src: url("assets-copy/fonts/Aeroport-regular.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Aeroport_bold";
+            src: url("assets-copy/fonts/Aeroport-bold.woff") format("woff");
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Khabensky";
+            src: url("assets-copy/fonts/Khabensky.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+
+        @media(max-width: 913px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(118, 63, 151, 1);
+            }
+
+            .column1,
+            .column2 {
+                width: 100vw;
+            }
+
+            .title {
+                color: white;
+                font-family: "Khabensky", sans-serif;
+                font-size: 1.8em;
+                padding-top: 1.5em;
+                padding-left: 0.5em
+            }
+
+            .subtitle {
+                color: white;
+                font-family: "Aeroport_regular", sans-serif;
+                font-size: 1.7em;
+                padding-top: 1em;
+                padding-left: 0.5em
+            }
+
+            .img {
+                width: 80vw;
+                padding-top: 5vw;
+            }
+
+            .bottom-block {
+                padding-top: 1em;
+                padding-left: 2em;
+                padding-bottom: 2em;
+                display: flex;
+                flex-direction: row;
+            }
+
+
+            .logo-img {
+                width: 30vw;
+
+            }
+
+            .to-help {
+                margin-left: 30vw;
+            }
+
+            .button-help {
+                width: 20vw;
+                height: 6vw;
+                border-radius: 1vw;
+                border: none;
+                font-family: "Aeroport_regular", sans-serif;
+                font-size: 3.6vw;
+                color: rgba(118, 63, 151, 1);
+            }
+        }
+
+        @media (min-width: 914px) and (max-width: 1981px) {
+            .container {
+                display: flex;
+                flex-direction: row;
+                background-color: rgba(118, 63, 151, 1);
+            }
+
+            .column1 {
+                width: 60vw;
+            }
+
+            .column2 {
+                width: 40vw;
+            }
+
+            .title {
+                color: white;
+                font-family: "Khabensky", sans-serif;
+                font-size: 2.8em;
+                padding-top: 1.5em;
+                padding-left: 1em;
+            }
+
+            .subtitle {
+                color: white;
+                font-family: "Aeroport_regular", sans-serif;
+                font-size: 2em;
+                padding-top: 1em;
+                padding-left: 1.5em
+            }
+
+            .img {
+                width: 50vw;
+                padding-top: 2vw;
+            }
+
+            .bottom-block {
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                padding-top: 85vh;
+                padding-left: 2em;
+            }
+
+            .logo-img {
+                width: 20vw;
+            }
+
+            .to-help {
+                padding-top: 1em;
+                position: absolute;
+                padding-left: 44vw;
+            }
+
+            .button-help {
+                width: 10vw;
+                height: 3vw;
+                border-radius: 0.5vw;
+                border: none;
+                font-family: "Aeroport_regular", sans-serif;
+                font-size: 1.8vw;
+                color: rgba(118, 63, 151, 1);
+            }
+        }
+
+
+
+        .column1,
+        .column2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .adress,
+        .happy,
+        .medical,
+        .know,
+        .fundrise,
+        .commun {
+            font-family: "Aeroport_regular", sans-serif;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+            padding-top: calc(8.7vh - 0.75em);
+            padding-bottom: calc(8.7vh - 0.75em);
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .adress {
+            background-color: #5FBF87;
+        }
+
+        .happy {
+            background-color: #F16722;
+        }
+
+        .medical {
+            background-color: rgba(235, 38, 39, 1);
+        }
+
+        .know {
+            background-color: rgba(62, 149, 209, 1);
+        }
+
+        .fundrise {
+            background-color: #D04F9C;
+        }
+
+        .commun {
+            background-color: rgba(131, 72, 167, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="column1">
+            <div class="title">БЛАГОТВОРИТЕЛЬНЫЙ ФОНД КОНСТАНТИНА ХАБЕНСКОГО</div>
+            <div class="subtitle">Годовой отчёт — 2021</div>
+            <div class="slider">
+                <div class="myslide">
+                    <img src="/assets-copy/neuro_0.png" alt="" class="myslide1">
+                </div>
+                <div class="myslide">
+                    <img src="/assets-copy/neuro_1.png" alt="" class="myslide1">
+                </div>
+                <div class="myslide">
+                    <img src="/assets-copy/neuro_3.png" alt="" class="myslide1">
+                </div>
+            </div>
+            <div class="bottom-block">
+                <div class="logo"><img src="assets-copy/logo.png" alt="" class="logo-img"></div>
+                <div class="to-help">
+                    <button class="button-help">Помочь</button>
+                </div>
+            </div>
+        </div>
+        <div class="column2">
+            <a href="adress-copy.html">
+                <div class="adress">АДРЕСНАЯ ПОМОЩЬ</div>
+            </a>
+            <a href="happy-copy.html">
+                <div class="happy">ТЕРАПИЯ СЧАСТЬЯ</div>
+            </a>
+            <a href="medical_help.html">
+                <div class="medical">ПОМОЩЬ МЕДИЦИНСКИМ И СОЦИАЛЬНЫМ УЧРЕЖДЕНИЯМ</div>
+            </a>
+            <a href="knowhow.html">
+                <div class="know">ЗНАТЬ И НЕ БОЯТСЯ</div>
+            </a>
+            <a href="fundrising.html">
+                <div class="fundrise">ФАНДРАЙЗИНГ</div>
+            </a>
+            <a href="commun.html">
+                <div class="commun">КОММУНИКАЦИИ</div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("myslide1");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (let slide of slides) {
+                slide.style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "flex";
+        }
+        let timer = setInterval(function () {
+            slideIndex++;
+            
+            showSlides(slideIndex);
+        }, 2000);
+    </script>
+</body>
+
+</html>
